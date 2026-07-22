@@ -1,0 +1,42 @@
+{
+  "preguntas": [
+    {"id": "meta_id", "texto_columna": "ID", "texto_pregunta": "Identificador interno de la respuesta", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+    {"id": "meta_hora_inicio", "texto_columna": "Hora de inicio", "texto_pregunta": "Hora de inicio de la respuesta", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+    {"id": "meta_hora_fin", "texto_columna": "Hora de finalización", "texto_pregunta": "Hora de finalización de la respuesta", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+    {"id": "meta_correo", "texto_columna": "Correo electrónico", "texto_pregunta": "Correo electrónico institucional", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+    {"id": "meta_nombre", "texto_columna": "Nombre", "texto_pregunta": "Nombre del estudiante", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+    {"id": "meta_hora_mod", "texto_columna": "Hora de la última modificación", "texto_pregunta": "Hora de la última modificación de la respuesta", "tipo": "metadato", "seccion": "Metadatos", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q01_consentimiento", "texto_columna": "¿Otorga su consentimiento expreso para el tratamiento de sus datos personales?", "texto_pregunta": "¿Otorga su consentimiento expreso para el tratamiento de sus datos personales?", "tipo": "categorica", "seccion": "Perfil del Becario Activo", "invertida": false, "opciones": ["Si", "No"], "grupo": null, "activa": true},
+
+    {"id": "q02_cedula", "texto_columna": "Ingrese su número de CÉDULA DE IDENTIDAD", "texto_pregunta": "Número de cédula de identidad", "tipo": "metadato", "seccion": "Perfil del Becario Activo", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q03_tipo_beca", "texto_columna": "Seleccione el TIPO DE BECA QUE OBTUVO", "texto_pregunta": "Tipo de beca obtenida", "tipo": "categorica", "seccion": "Perfil del Becario Activo", "invertida": false, "opciones": ["Excelencia Académica", "Vulnerabilidad", "Discapacidad"], "grupo": null, "activa": true},
+
+    {"id": "q04_semestre", "texto_columna": "Seleccione su SEMESTRE EN CURSO", "texto_pregunta": "Semestre en curso", "tipo": "categorica", "seccion": "Perfil del Becario Activo", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q05_ocupacion_jefe_hogar", "texto_columna": "¿Cuál es la ocupación actual del jefe de hogar?", "texto_pregunta": "Ocupación actual del jefe de hogar", "tipo": "categorica", "seccion": "Perfil del Becario Activo", "invertida": false, "opciones": ["Empleado público", "Empleado privado", "Trabajador independiente", "Desempleado", "Jubilado"], "grupo": null, "activa": true},
+
+    {"id": "q06_promedio", "texto_columna": "Ingrese su promedio de calificaciones del último semestre culminado.", "texto_pregunta": "Promedio de calificaciones del último semestre culminado (escala 0-20)", "tipo": "numerica", "seccion": "Impacto Económico y Eficiencia Académica", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q07_apoyo_evita_abandono", "texto_columna": "Column", "texto_pregunta": "Del 1 al 5, ¿en qué medida considera que el apoyo económico de la beca ha sido un factor determinante para evitar que abandone sus estudios universitarios?", "tipo": "likert", "seccion": "Impacto Económico y Eficiencia Académica", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q08_horas_reducidas", "texto_columna": "Si trabajabas antes de recibir la beca, ¿cuántas horas semanales has reducido gracias a este apoyo? (Escribe 0 si no trabajabas o si mantienes las mismas horas).", "texto_pregunta": "Horas semanales de trabajo reducidas gracias a la beca", "tipo": "numerica", "seccion": "Impacto Económico y Eficiencia Académica", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q09_impacto_hogar", "texto_columna": "2", "texto_pregunta": "Del 1 al 5, ¿considera que el haber sido becario influyó positivamente en las condiciones de su hogar (acceso a servicios básicos o bienes)?", "tipo": "likert", "seccion": "Impacto Económico y Eficiencia Académica", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q10_vinculacion", "texto_columna": "Durante su vida universitaria, ¿se ha vinculado con espacios institucionales como el HCU , Coro Universitario , intercambios académicos  u otros grupos?", "texto_pregunta": "Vinculación con espacios institucionales durante la vida universitaria", "tipo": "multiseleccion", "seccion": "Desarrollo Integral y Entorno Universitario", "invertida": false, "opciones": ["Sí, a grupos culturales/deportivos", "Sí, a representación estudiantil (HCU, AFU, etc.)", "Sí, a intercambios", "No me he vinculado"], "grupo": null, "activa": true},
+
+    {"id": "q11_relacion_companeros", "texto_columna": "3", "texto_pregunta": "Del 1 al 5, ¿considera que ser becado influye positivamente en su relación con compañeros y profesores?", "tipo": "likert", "seccion": "Desarrollo Integral y Entorno Universitario", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q12_motiv_expectativas", "texto_columna": "Alcanzar sus propias expectativas", "texto_pregunta": "Importancia de 'alcanzar sus propias expectativas' en la motivación para mantener alto rendimiento académico", "tipo": "likert", "seccion": "Desarrollo Integral y Entorno Universitario", "invertida": false, "opciones": [], "grupo": "q12_motivacion", "activa": true},
+    {"id": "q12_motiv_mantener_beca", "texto_columna": "Mantener el beneficio de la beca", "texto_pregunta": "Importancia de 'mantener el beneficio de la beca' en la motivación para mantener alto rendimiento académico", "tipo": "likert", "seccion": "Desarrollo Integral y Entorno Universitario", "invertida": false, "opciones": [], "grupo": "q12_motivacion", "activa": true},
+    {"id": "q12_motiv_familia", "texto_columna": "Mejorar las condiciones de vida de su familia", "texto_pregunta": "Importancia de 'mejorar las condiciones de vida de su familia' en la motivación para mantener alto rendimiento académico", "tipo": "likert", "seccion": "Desarrollo Integral y Entorno Universitario", "invertida": false, "opciones": [], "grupo": "q12_motivacion", "activa": true},
+
+    {"id": "q13_estres_financiero", "texto_columna": "4", "texto_pregunta": "Del 1 al 5, ¿cómo calificaría su nivel actual de estrés o ansiedad vinculado a sus responsabilidades financieras universitarias?", "tipo": "likert", "seccion": "Pertenencia y Bienestar Institucional", "invertida": true, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q14_pertenencia", "texto_columna": "5", "texto_pregunta": "Del 1 al 5, ¿considera que ser becado contribuye a que su sentido de pertenencia con la Universidad sea mayor?", "tipo": "likert", "seccion": "Pertenencia y Bienestar Institucional", "invertida": false, "opciones": [], "grupo": null, "activa": true},
+
+    {"id": "q15_comentario_abierto", "texto_columna": "¿Qué aspecto de los servicios de Bienestar Universitario mejoraría, o cómo siente que la beca ha impactado su tranquilidad personal?", "texto_pregunta": "¿Qué aspecto de los servicios de Bienestar Universitario mejoraría, o cómo siente que la beca ha impactado su tranquilidad personal?", "tipo": "texto_libre", "seccion": "Pertenencia y Bienestar Institucional", "invertida": false, "opciones": [], "grupo": null, "activa": true}
+  ]
+}

@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Excel de respuestas reales: contienen datos personales (cédula, nombre, correo).
+# Nunca deben subirse al repositorio.
+*.xlsx
+*.xls
+!config/*.xlsx
+
+# Informes generados (salida del programa, no código fuente)
+/salidas/
+*.docx
+*.pdf
+
+# Configuración local que no es la plantilla compartida
+config/plantilla_local*.json
