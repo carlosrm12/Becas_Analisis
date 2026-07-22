@@ -18,7 +18,7 @@ detecta el cambio y permite resolverlo desde la interfaz, sin tocar código.
 - [x] Carga de Excel y mapeo automático de columnas (`app/io_excel.py`)
 - [x] Detección de columnas nuevas sin clasificar y preguntas ausentes
 - [x] Plantilla por defecto con las 23 columnas del formulario actual (`config/plantilla_default.json`)
-- [ ] Motor de análisis (perfil, impacto por sección, comparación por tipo de beca, relaciones entre dimensiones)
+- [x] Motor de análisis (`app/analysis.py`): conversión de estrellas/tipos, filtro por consentimiento, detección de duplicados, perfil, resumen por pregunta segmentado por tipo de beca, índices compuestos, relaciones entre variables, casos prioritarios
 - [ ] Editor visual del diccionario de preguntas (UC3/UC5/UC6)
 - [ ] Interfaz PySide6 (pantallas: carga, resolución de mapeo, vista previa, exportar)
 - [ ] Generación de informe final en Word (`python-docx`)
