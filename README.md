@@ -19,8 +19,7 @@ detecta el cambio y permite resolverlo desde la interfaz, sin tocar código.
 - [x] Detección de columnas nuevas sin clasificar y preguntas ausentes
 - [x] Plantilla por defecto con las 23 columnas del formulario actual (`config/plantilla_default.json`)
 - [x] Motor de análisis (`app/analysis.py`): conversión de estrellas/tipos, filtro por consentimiento, detección de duplicados, perfil, resumen por pregunta segmentado por tipo de beca, índices compuestos, relaciones entre variables, casos prioritarios
-- [ ] Editor visual del diccionario de preguntas (UC3/UC5/UC6)
-- [ ] Interfaz PySide6 (pantallas: carga, resolución de mapeo, vista previa, exportar)
+- [x] Interfaz PySide6 (`app/ui/`): carga de Excel, diálogo de resolución de mapeo (columnas nuevas / preguntas ausentes), pestañas de resultados (Resumen, Perfil, las 3 secciones de impacto, Índices, Relaciones, Casos prioritarios)
 - [ ] Generación de informe final en Word (`python-docx`)
 - [ ] Detección de duplicados y filtrado por consentimiento
 - [ ] Comparación entre rondas/semestres (histórico)
@@ -33,15 +32,26 @@ source .venv/bin/activate  # en Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Probar la carga + mapeo (paso actual)
+## Ejecutar la aplicación
+
+```bash
+python app/main.py
+```
+
+Desde el menú **Archivo > Cargar Excel...** puedes seleccionar el archivo de
+respuestas exportado desde Microsoft Forms. Si el formulario cambió (columna
+nueva o pregunta eliminada), se abrirá un diálogo para resolverlo antes de
+mostrar el análisis en pestañas.
+
+El diccionario de preguntas que edites desde la app se guarda en
+`config/plantilla_local.json` (no versionado en git) — la plantilla base en
+`config/plantilla_default.json` no se modifica.
+
+## Probar solo la carga + mapeo (sin interfaz)
 
 ```bash
 python tests/test_mapping.py "ruta/al/excel_exportado.xlsx"
 ```
-
-Esto debería mostrar cuántas preguntas se mapearon correctamente contra la
-plantilla, y avisar si hay columnas nuevas sin clasificar o preguntas
-conocidas que no aparecieron en ese archivo.
 
 ## Nota sobre datos sensibles
 
